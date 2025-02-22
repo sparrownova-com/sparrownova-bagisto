@@ -108,7 +108,5 @@ This project is licensed under the [MIT License](LICENSE).
 🔗 **Live Website**: [Sparrownova.com](https://sparrownova.com)  
 📧 **Contact**: support@sparrownova.com  
 
-Would you like to see a demo? [Click Here](#) *(Add your demo link here if available)*  
 
-_![Sparrownova UI Preview](https://your-image-url.com)_ *(Replace with an actual screenshot of the admin panel or storefront)*
 
