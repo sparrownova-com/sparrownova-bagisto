@@ -1,154 +1,182 @@
-<p align="center">
-    <a href="http://www.bagisto.com"><img src="https://bagisto.com/wp-content/themes/bagisto/images/logo.png" alt="Total Downloads"></a>
-</p>
+# A Comprehensive Guide to Forking, Versioning, and Customizing Open-Source Projects: Bagisto as a Case Study
 
-<p align="center">
-    <a href="https://packagist.org/packages/bagisto/bagisto"><img src="https://poser.pugx.org/bagisto/bagisto/d/total.svg" alt="Total Downloads"></a>
-    <a href="https://packagist.org/packages/bagisto/bagisto"><img src="https://poser.pugx.org/bagisto/bagisto/v/stable.svg" alt="Latest Stable Version"></a>
-    <a href="https://packagist.org/packages/bagisto/bagisto"><img src="https://poser.pugx.org/bagisto/bagisto/license.svg" alt="License"></a>
-    <a href="https://github.com/bagisto/bagisto/actions"><img src="https://github.com/bagisto/bagisto/workflows/CI/badge.svg" alt="Backers on Open Collective"></a>
-    <a href="#backers"><img src="https://opencollective.com/bagisto/backers/badge.svg" alt="Backers on Open Collective"></a>
-    <a href="#sponsors"><img src="https://opencollective.com/bagisto/sponsors/badge.svg" alt="Sponsors on Open Collective"></a>
-    <a href="https://www.codetriage.com/bagisto/bagisto"><img src="https://www.codetriage.com/bagisto/bagisto/badges/users.svg" alt="Open Source Helpers"></a>
-</p>
+## Introduction
 
-<p align="center">
-    <a href="https://twitter.com/intent/follow?screen_name=bagistoshop"><img src="https://img.shields.io/twitter/follow/bagistoshop?style=social"></a>
-    <a href="https://www.youtube.com/channel/UCbrfqnhyiDv-bb9QuZtonYQ"><img src="https://img.shields.io/youtube/channel/subscribers/UCbrfqnhyiDv-bb9QuZtonYQ?style=social"></a>
-</p>
+Forking an open-source project like **Bagisto** allows you to customize and extend its functionality while keeping track of the latest updates from the original repository. GitHub versioning helps manage changes efficiently and collaborate seamlessly with the community. In this guide, we’ll walk you through the process of forking Bagisto, setting it up locally, and managing your fork efficiently for Sparrownova’s retail solutions.
 
-<p align="center">
-    ➡️ <a href="https://bagisto.com/en/">Website</a> | <a href="https://devdocs.bagisto.com/">Documentation</a> | <a href="https://webkul.com/blog/laravel-ecommerce-website/">Installation Guide</a> | <a href="https://forums.bagisto.com/">Forums</a> | <a href="https://www.facebook.com/groups/bagisto/">Community</a> ⬅️
-</p>
+## Understanding Forking and GitHub Versioning
 
-<p align="center" style="display: inline;">
-    <img class="flag-img" src="https://flagicons.lipis.dev/flags/4x3/ar.svg" alt="Arabic" width="24" height="24">
-    <img class="flag-img" src="https://flagicons.lipis.dev/flags/4x3/de.svg" alt="German" width="24" height="24">
-    <img class="flag-img" src="https://flagicons.lipis.dev/flags/4x3/us.svg" alt="English" width="24" height="24">
-    <img class="flag-img" src="https://flagicons.lipis.dev/flags/4x3/es.svg" alt="Spanish" width="24" height="24">
-    <img class="flag-img" src="https://flagicons.lipis.dev/flags/4x3/ir.svg" alt="Persian" width="24" height="24">
-    <img class="flag-img" src="https://flagicons.lipis.dev/flags/4x3/it.svg" alt="Italian" width="24" height="24">
-    <img class="flag-img" src="https://flagicons.lipis.dev/flags/4x3/nl.svg" alt="Dutch" width="24" height="24">
-    <img class="flag-img" src="https://flagicons.lipis.dev/flags/4x3/pl.svg" alt="Polish" width="24" height="24">
-    <img class="flag-img" src="https://flagicons.lipis.dev/flags/4x3/pt.svg" alt="Portuguese" width="24" height="24">
-    <img class="flag-img" src="https://flagicons.lipis.dev/flags/4x3/tr.svg" alt="Turkish" width="24" height="24">
-    <img class="flag-img" src="https://flagicons.lipis.dev/flags/4x3/eg.svg" alt="Egyptian" width="24" height="24">
-    <img class="flag-img" src="https://flagicons.lipis.dev/flags/4x3/cn.svg" alt="Chinese" width="24" height="24">
-</p>
+### What is Forking?
 
-<a href="https://www.youtube.com/watch?v=OHbte7hdxYU">
-    <img class="flag-img" src="https://raw.githubusercontent.com/bagisto/temp-media/master/bagisto-featured.png" alt="Chinese" width="100%">
-</a>
+Forking is the process of creating a copy of a repository under your GitHub account. This allows you to modify the project independently while still being able to pull in updates from the original source when needed. It is especially useful for open-source customization, collaborative development, and maintaining separate versions for different use cases.
 
-# Introduction
+### Benefits of Forking
 
-Bagisto is an opensource [laravel eCommerce](https://www.bagisto.com/) framework built on some of the hottest technologies such as [Laravel](https://laravel.com/) (a [PHP](https://secure.php.net/) framework) and [Vue.js](https://vuejs.org/) a progressive Javascript framework.
+- **Custom Development**: Modify and extend functionalities without affecting the original project.
+- **Sync with Updates**: Merge changes from the original repository while keeping your custom modifications.
+- **Collaboration**: Work with teams on custom features while retaining the open-source foundation.
 
-Bagisto can help you cut down your time, cost, and workforce for building online stores or migrating from physical stores to the ever-demanding online world. Your business—whether small or huge—can benefit. The best part, it's straightforward to set it up!
+### What is GitHub Versioning?
 
-![enter image description here](https://raw.githubusercontent.com/bagisto/temp-media/master/stats.png)
+GitHub uses **version control** to track changes to a project over time. Each update is recorded as a commit, and branches allow for isolated development of features or bug fixes. A well-maintained repository follows a structured branching strategy to ensure stability and seamless updates.
 
-# Getting Started
+## Workflow Overview: From Fork to Deployment
 
-![enter image description here](https://raw.githubusercontent.com/bagisto/temp-media/master/geting-starded.png)
+```
+Fork → Clone → Modify → Sync → Push → Deploy
+```
 
-[Install Bagisto](https://webkul.com/blog/laravel-ecommerce-website/) with or without Composer (Check [Requirement Details](https://bagisto.com/en/download/))
+## Step 1: Fork Bagisto on GitHub
 
-Follow the [Getting Started with Bagisto](https://www.youtube.com/watch?v=s_DhQrjK8Tw&list=PLe30vg_FG4OS3BU8rHUKQZ2mnX45xwSMc) Tutorial
+1. Go to the [Bagisto GitHub repository](https://github.com/bagisto/bagisto).
+2. Click the **Fork** button (top-right corner).
+3. Select your GitHub account/organization (e.g., `sparrownova`).
+4. This creates a new repository: `https://github.com/sparrownova/sparrownova-bagisto`.
 
-You can browse through the Free [Live Demo](https://demo.bagisto.com/)
+## Step 2: Prerequisites
 
-# Accelerate Your Online Store Launch with the Bagisto Starter Pack!
+Before proceeding, ensure you have the following installed:
 
-Empower your e-commerce journey with the [Bagisto Starter Pack](https://store.webkul.com/bagisto-starter-pack.html), streamlining setup and integration for a seamless online store launch. Get ready to unlock success in the digital marketplace! 
+- **Git** (for cloning and version control)
+- **Composer** (for managing dependencies)
+- **PHP (>=8.0)**
+- **Laravel (Latest Version)**
+- **MySQL / MariaDB** (for database management)
 
-# Headless Commerce
+## Step 3: Clone Your Forked Repository Locally
 
-The power of headless laravel commerce now comes to Bagisto enabling you to experience seamless and easily scalable storefront performance. Backed by some of the hottest tech stacks (Vue and React), Bagisto commerce can now be used to build powerful headless commerce solutions offering blazing-fast speed and easy customization powered by Vue Storefront and Next.js
+### Where to Clone?
+You should clone your forked repository into a directory where you manage your GitHub projects. In this example, we’ll use `G:\IMP\GitHub\Sparrownova`.
 
-## Vue Storefront
+### Steps to Clone:
+1. Open **PowerShell** or **Command Prompt**.
+2. Navigate to your desired GitHub directory:
+   ```sh
+   cd G:\IMP\GitHub\Sparrownova
+   ```
+3. Clone your forked repository from GitHub to your local system:
+   ```sh
+   git clone https://github.com/sparrownova/sparrownova-bagisto.git
+   ```
+4. Change into the project directory:
+   ```sh
+   cd sparrownova-bagisto
+   ```
 
-![enter image description here](https://raw.githubusercontent.com/bagisto/temp-media/master/vue.png)
+## Step 4: Set Up Upstream for Syncing
 
-Vue Storefront 2 integration for Bagisto: [https://github.com/bagisto/vuestorefront](https://github.com/bagisto/vuestorefront)
+To keep your fork updated with Bagisto:
 
-## Next.js Commerce
+1. Add Bagisto's original repo as `upstream`:
+   ```sh
+   git remote add upstream https://github.com/bagisto/bagisto.git
+   ```
+2. Verify remotes:
+   ```sh
+   git remote -v
+   ```
+   You should see:
+   ```
+   origin    https://github.com/sparrownova/sparrownova-bagisto.git (fetch)
+   origin    https://github.com/sparrownova/sparrownova-bagisto.git (push)
+   upstream  https://github.com/bagisto/bagisto.git (fetch)
+   upstream  https://github.com/bagisto/bagisto.git (push)
+   ```
 
-![enter image description here](https://raw.githubusercontent.com/bagisto/temp-media/master/next.png)
+## Step 5: Install Bagisto Locally
 
-Develop and deploy your next headless commerce storefronts with Next JS and Bagisto: [https://github.com/bagisto/nextjs-commerce](https://github.com/bagisto/nextjs-commerce)
+1. Install dependencies:
+   ```sh
+   composer install
+   ```
+2. Set up the `.env` file:
+   ```sh
+   cp .env.example .env
+   ```
+3. Generate the application key:
+   ```sh
+   php artisan key:generate
+   ```
+4. Run migrations and seed the database:
+   ```sh
+   php artisan migrate --seed
+   ```
+5. Serve the application:
+   ```sh
+   php artisan serve
+   ```
 
-# Open Source Mobile eCommerce
+## Step 6: Keeping Your Fork Updated
 
-Revolutionize Your Online Store with Bagisto's Open Source eCommerce Mobile 
+Periodically update your fork with Bagisto’s latest changes:
 
-![enter image description here](https://raw.githubusercontent.com/bagisto/temp-media/master/open-source-ecommerce-mobile.png)
+1. Fetch updates from the upstream repository:
+   ```sh
+   git fetch upstream
+   ```
+2. Merge upstream changes into your local branch:
+   ```sh
+   git rebase upstream/master
+   ```
+3. Push the updated changes to your forked repository:
+   ```sh
+   git push origin master
+   ```
 
-Mobile eCommerce powered by Flutter & Laravel: https://github.com/bagisto/opensource-ecommerce-mobile-app
+## Step 7: Committing and Pushing Changes
 
-# AI Powered eCommerce
+When making changes to Sparrownova’s forked version of Bagisto:
 
-You can integrate popular large language models like GPT, BERT, Llama etc. to build [AI-powered eCommerce](https://bagisto.com/en/extensions/laravel-chatbot-using-openai-chatgpt-llm/) applications with bagisto. Some of the popular use cases where you can make use of LLMs to build AI apps are chatbots, automated product descriptions, customer support, search and recommendations. 
+1. Create a new feature branch:
+   ```sh
+   git checkout -b feature-branch
+   ```
+2. Make your changes.
+3. Stage the changes:
+   ```sh
+   git add .
+   ```
+4. Commit the changes:
+   ```sh
+   git commit -m "Custom modifications for Sparrownova"
+   ```
+5. Push to your fork:
+   ```sh
+   git push origin feature-branch
+   ```
 
-![enter image description here](https://raw.githubusercontent.com/bagisto/temp-media/master/ai_powered_ecommerce.png)
+---
 
-You can incorporate LLM API with your bagisto applications to send and receive queries and ensure proper error handling and rate limiting to prevent overuse of the API
+## 🛠 Common Issues & Fixes
 
-# Decentralised eCommerce
+- **Composer Timeout Issue**: Run `composer clear-cache` and try again.
+- **Migration Errors**: Ensure MySQL is running and `.env` has correct database credentials.
+- **Permission Errors**: Run `chmod -R 777 storage bootstrap/cache`.
 
-Build [decentralised applications](https://bagisto.com/en/services/blockchain-commerce/) with Bagisto on popular blockchains like Ethereum and Solana by integrating smart contracts with the eCommerce platform. You can have decentralised marketplaces, [NFT marketplaces](https://bagisto.com/en/nft-marketplace/), and decentralised e-signing with the laravel eCommerce system.
+## 📦 Deploying Your Forked Version
 
-![enter image description here](https://raw.githubusercontent.com/bagisto/temp-media/master/decentralised-ecommerce.png)
+- Use **a separate branch** for production (`git checkout -b production`).
+- Set up **a proper CI/CD pipeline** for automated testing and deployment.
+- Configure **environment variables securely** instead of hardcoding sensitive data.
 
-# Commerce For Every Need
+## 🚀 Recommended Branching Strategy
 
-![enter image description here](https://raw.githubusercontent.com/bagisto/temp-media/master/every-need.png)
+- `master`: Keep it stable and production-ready.
+- `development`: For active development and testing.
+- Feature branches (`feature-new-ui`, `feature-payment-gateway`) for specific enhancements.
 
-With Bagisto, you can easily create use cases for various commerce needs like Marketplaces, PWA, Native Mobile Apps, Multi-Tenants systems, Blockchain and many more.
+## 🧪 Testing Before Pushing Changes
 
-# Built In Extensions
+Always test your changes locally:
 
-![enter image description here](https://raw.githubusercontent.com/bagisto/temp-media/master/built_in_extension.png)
+1. Run `php artisan test` for automated testing.
+2. Manually check UI & functionality before committing.
 
-Make use of 100+ Bagisto pre-built extensions from [Bagisto Extension Markeptlace](https://bagisto.com/en/extensions/)
+## Conclusion
 
-# Community
+By following this guide, you have successfully forked, installed, and set up Bagisto for Sparrownova. Keeping your fork updated with the upstream repository ensures you have the latest features and security patches while maintaining your customizations. This structured approach allows for seamless development and scalability of your e-commerce solutions. 🚀
 
-![enter image description here](https://raw.githubusercontent.com/bagisto/temp-media/master/community.png)
+## Why This Approach is Beneficial
 
-Get Bagisto support on [Facebook Group](https://www.facebook.com/groups/bagisto) and [Forum](https://forums.bagisto.com/)
-Would like to help us build the most developer-friendly E-Commerce platform? Start by reading our [Contributing Guide](https://github.com/bagisto/bagisto/blob/master/.github/CONTRIBUTING.md)!
+Your idea of forking Bagisto for Sparrownova is a solid approach. It allows full control over customizations while still benefiting from the active development and improvements made by the Bagisto community. Using GitHub versioning and structured workflows ensures your platform remains robust, scalable, and maintainable. This guide not only helps you but can also serve as a reference for others looking to customize Bagisto effectively. 💡
 
-# License
-Bagisto is a truly open-source laravel eCommerce framework that will always be free under the [OSL-3.0 License](https://github.com/bagisto/bagisto/blob/master/LICENSE.txt).
-
-# Security Vulnerabilities
-If you think that you have found a security issue in Bagisto, please do not use the issue tracker and do not post it publicly. Instead, all security issues must be sent to [mailto:support@bagisto.com](mailto:support@bagisto.com).
-
-# Contributors
-
-This project is on [Open Collective](https://opencollective.com/bagisto), and it exists thanks to the people who contribute.
-
-<a href="https://github.com/bagisto/bagisto/graphs/contributors"><img src="https://opencollective.com/bagisto/contributors.svg?width=890&button=false"/></a>
-
-# Backers
-
-Thank you to all our backers! 🙏
-
-<a href="https://opencollective.com/bagisto#contributors" target="_blank"><img src="https://opencollective.com/bagisto/backers.svg?width=890"></a>
-
-# Sponsors
-
-Support this project by becoming a sponsor. Your logo will show up here with a link to your website.
-
-<div>
-    <a href="https://opencollective.com/bagisto/contribute/sponsor-7372/checkout" target="_blank">
-        <img src="https://images.opencollective.com/static/images/become_sponsor.svg">
-    </a>
-</div>
-
-<kbd>
-    <a href="http://e.ventures/" target="_blank">
-        <img src="https://images.opencollective.com/e-ventures1/7d61db2/logo.png" height="75">
-    </a>
-</kbd>
